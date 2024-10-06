@@ -44,5 +44,18 @@ if we look at this pattern then we can see that how far the colomn will print is
         }
         printf("\n");
     }
-return 0;
+
+//  reverse pattern program
+// #include<stdio.h>
+// int main(){
+    int i;
+    printf("Enter pattern:");
+    scanf("%d",&i);
+    for(int row=1;row<=i;row++){
+        for(int col=i;col>=row;col--){
+            printf("* ");
+        }
+    printf("\n");
+    }
+    return 0;
 }
