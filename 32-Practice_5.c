@@ -23,5 +23,5 @@ int main(){
         sum+=i;
     }
     printf("The sum =%d",sum);
-return 0;
+
 }
