@@ -24,10 +24,19 @@ int main()
     printHello();
     goodbye();
 
-    double a; 
-    printf("enter your language name(Indian/French):");
+    char a; 
+    printf("enter your language name(I/F):");
     scanf("%s",&a);
 
+    if(a == 'I'){
+        namaste();
+    }
+    else if(a == 'F'){
+        bonjur();
+    }
+    else {
+        printf("WRONG INPUT!!!");
+    }
 
 
     return 0;
