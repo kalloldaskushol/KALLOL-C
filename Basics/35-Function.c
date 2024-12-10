@@ -27,7 +27,13 @@ functions can give value which is called return value.
 
 The function which are we calling will have to be in the upper side of that function.
 
+imppppppppppppppppppppppppppp---------------------
+
 if there are a,b variable in main function also we have a,b variable in the user-defined function. These four variable are not same. in main function their are two variable as a and b also we have two different variable in user defined function.
+
+int sum = add(a,b)
+
+suppose it is written in the main function, it is called call by value. it passes the values of a & b to the add function.
 
 
 */
