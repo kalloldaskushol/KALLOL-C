@@ -222,7 +222,7 @@ for(int row =1;row<=n;row++){
     for(int col=1;col<=n-row;col++){
         printf(" ");
     }
-    for(int col=1;col<=(2*row-1);col++){
+    for(int col=1;col<=(2*row-1);col++){ // bijur ta star
         printf("%d",col);
     }
     printf("\n");
@@ -244,5 +244,26 @@ for(int row =1;row<=n;row++){
     }
     printf("\n");
 }
+/*
+*********
+ *******
+  *****
+   ***
+    *
+*/
+    int n=5;
+
+    for(int r=n; r>=1; r--){
+        
+        for(int c=1; c<=(n-r); c++){
+            printf(" ");
+        }
+        for(int c=1; c<=(2*r-1); c++){
+            printf("*");
+        }
+
+        printf("\n");
+    }
+
     return 0;
 }
