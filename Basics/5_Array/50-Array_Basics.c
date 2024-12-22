@@ -31,5 +31,20 @@ int main(){
     for(int i = 0; i<=4; i++) scanf("%d", &arr[i]);
     for(int i = 0; i<=4; i++) printf("%d ",arr[i]);
 // loops starts from 0 and goes n-1
+
+/*
+// What is the difference between the 5's in these two expressions:
+
+int num[5];
+num[5] = 11;
+
+first is array size and second is particular element.
+*/
+
+/*
+What would happen if you assign a value to an element of an array whose subscript exceeds the size of the array:
+
+if array size is 5 and you assign a value to num[5] = 11; it will give you an error.
+*/
 return 0;
 }
