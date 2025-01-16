@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+//In C, when you declare an array without specifying its size, it means that the size of the array is implicitly determined based on the number of elements you provide during initialization.
 int main(){
 
     int arr[5] = {1,2,3,4,5};
