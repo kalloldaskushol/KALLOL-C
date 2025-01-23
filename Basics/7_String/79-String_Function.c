@@ -33,11 +33,10 @@ int main()
     char firstStr[] = "Hello";
     char secStr[] = "World";
 
-    strcat(firstStr,secStr);
-    
-    puts(firstStr);//Without spaces
+    strcat(firstStr, secStr);
+
+    puts(firstStr); // Without spaces
     // The concatenated string will be stored in the firststr. So the first string must be largr enough to take the capacity.
-    
     /*
     4.strcmp(firststr, secstr)
     Compares size of 2 strings & returns a value
@@ -45,5 +44,13 @@ int main()
     Positive -> first > second (ASCII)
     Negative -> first < second (ASCII)
     */
+
+    char str1[] = "apple";
+    char str2[] = "ball";
+    printf("%d \n", strcmp(str1, str2)); //65-66 = -1
+    printf("%d \n", strcmp(str2, str1)); //66-65 = +1
+   // the result comes by 1st's first letter - 2nd's first letter
+   // if both are same then the result will be 0;
+   // if HHA & HHB is given then the compare will be done by the last letter.
     return 0;
 }
