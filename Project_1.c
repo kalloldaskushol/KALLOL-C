@@ -53,7 +53,7 @@ void displayStudent(){
 
     void searchStudent(){
         int id;
-        printf("Enter the id of the student:\n");
+        printf("Enter the id of the student:");
         scanf("%d", &id);
         getchar();
 
