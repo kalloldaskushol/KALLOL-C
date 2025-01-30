@@ -158,3 +158,8 @@ void menu()
         }
         return 0;
     }
+
+
+        //     char name[100];
+        // fgets(name, 100, stdin);
+        // name[strcspn(name, "\n")] = '\0';
