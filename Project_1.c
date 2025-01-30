@@ -56,7 +56,6 @@ void displayStudent(){
         printf("Enter the id of the student:");
         scanf("%d", &id);
         getchar();
-
         for(int i=0; i<studentCount; i++){
             if(id == CSE[i].id){
                 printf("Student FOUND!!!!!\n");
