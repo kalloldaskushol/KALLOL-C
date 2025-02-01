@@ -16,22 +16,23 @@ void addStudent(){
         printf("****RETURNING TO THE ADMIN PORTAL****\n\n");
         return;
     }
-    
-        printf("Enter Student Name:");
-        fgets(CSE[studentCount].name, sizeof(CSE[studentCount].name), stdin);
-        CSE[studentCount].name[strcspn(CSE[studentCount].name, "\n")] = '\0';
-
-        printf("Enter student id: ");
-        scanf("%d", &CSE[studentCount].id);
-        
-        printf("Enter batch: ");
-        scanf("%d", &CSE[studentCount].batch);
-
+    else{
+            printf("Enter Student Name:");
+            fgets(CSE[studentCount].name, sizeof(CSE[studentCount].name), stdin);
+            CSE[studentCount].name[strcspn(CSE[studentCount].name, "\n")] = '\0';
+            printf("Enter student id: ");
+            scanf("%d", &CSE[studentCount].id);
+            
+            printf("Enter batch: ");
+            scanf("%d", &CSE[studentCount].batch);
+            getchar();
         printf("Student Added Successfully! Welcome %s to LU <3\n", CSE[studentCount].name);   
+            studentCount++;
         printf("****RETURNING TO THE ADMIN PORTAL****\n\n");
-
-        studentCount++;
     }
+
+}
+
 
 void displayStudent(){
         if(studentCount == 0 ){
@@ -46,8 +47,8 @@ void displayStudent(){
                 printf("Name: %s \n", CSE[i].name);
                 printf("ID: %d \n", CSE[i].id);
                 printf("Batch: %d \n", CSE[i].batch);
-                printf("****RETURNING TO THE ADMIN PORTAL****\n\n");
             }
+        printf("****RETURNING TO THE ADMIN PORTAL****\n\n");
         }
     }
 
@@ -160,6 +161,17 @@ void menu()
     }
 
 
+
+// seacrh by name
         //     char name[100];
         // fgets(name, 100, stdin);
         // name[strcspn(name, "\n")] = '\0';
+
+
+
+
+// search for n
+        // int stdnum;
+        // scanf("%d", &stdnum);
+        // getchar();
+        // for(int i=0;i<stdnum; i++){
