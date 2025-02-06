@@ -61,17 +61,17 @@ int main() {
 // Function to create a new account
 void createAccount() {
     if (accountCount < 100) {
-        struct BankAccount newAccount;
-        printf("Enter Account Number: ");
-        scanf("%d", &newAccount.accountNumber);
-        printf("Enter Name: ");
-        getchar(); // Consume newline character
-        fgets(newAccount.name, sizeof(newAccount.name), stdin);
-        newAccount.name[strcspn(newAccount.name, "\n")] = '\0'; // Remove trailing newline
+        // struct BankAccount newAccount;
+        // printf("Enter Account Number: ");
+        // scanf("%d", &newAccount.accountNumber); // 12 '\n'
+        // getchar();
+        printf("Enter Name: "); 
+        fgets(accounts.name, sizeof(accounts.name), stdin);//
+        accounts.name[strcspn(accounts.name, "\n")] = '\0'; // Remove trailing newline
         printf("Enter Initial Balance: ");
-        scanf("%f", &newAccount.balance);
-
-        accounts[accountCount++] = newAccount;
+        scanf("%f", &accounts.balance);
+//0
+     accounts[accountCount++] = accounts;
         printf("Account created successfully!\n");
     } else {
         printf("Account limit reached. Cannot create more accounts.\n");
@@ -141,12 +141,12 @@ void withdrawMoney() {
 void deleteAccount() {
     int accountNumber;
     printf("Enter Account Number to Delete: ");
-    scanf("%d", &accountNumber);
+    scanf("%d", &accountNumber); // 102 
 
     for (int i = 0; i < accountCount; i++) {
-        if (accounts[i].accountNumber == accountNumber) {
-            for (int j = i; j < accountCount - 1; j++) {
-                accounts[j] = accounts[j + 1];
+        if (accounts[i].accountNumber == accountNumber) {            
+            for (int j = i; j < accountCount - 1; j++) {  
+                accounts[j] = accounts[j + 1]; 
             }
             accountCount--;
             printf("Account deleted successfully!\n");
@@ -154,4 +154,8 @@ void deleteAccount() {
         }
     }
     printf("Account not found!\n");
+
+// 0182410012101003
+    // 0 1 2 3 4
+    // a b d e null 
 }
