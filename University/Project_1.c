@@ -17,6 +17,7 @@ void addStudent(){
         return;
     }
     else{
+        
             printf("Enter Student Name:");
             fgets(CSE[studentCount].name, sizeof(CSE[studentCount].name), stdin);
             CSE[studentCount].name[strcspn(CSE[studentCount].name, "\n")] = '\0';
@@ -26,7 +27,7 @@ void addStudent(){
             printf("Enter batch: ");
             scanf("%d", &CSE[studentCount].batch);
             getchar();
-        printf("Student Added Successfully! Welcome %s to LU <3\n", CSE[studentCount].name);   
+            printf("Student Added Successfully! Welcome %s to LU <3\n", CSE[studentCount].name);   
             studentCount++;
         printf("****RETURNING TO THE ADMIN PORTAL****\n\n");
     }
@@ -58,7 +59,7 @@ void displayStudent(){
         scanf("%d", &id);
         getchar();
         for(int i=0; i<studentCount; i++){
-            if(id == CSE[i].id){
+            if(CSE[i].id == id ){
                 printf("Student FOUND!!!!!\n");
                 printf("Name: %s \n", CSE[i].name);
                 printf("ID: %d \n", CSE[i].id);
@@ -162,10 +163,31 @@ void menu()
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // seacrh by name
-        //     char name[100];
-        // fgets(name, 100, stdin);
-        // name[strcspn(name, "\n")] = '\0';
+// char name[100];
+// fgets(name, 100, stdin);
+// name[strcspn(name, "\n")] = '\0';
+
+        // if(strcmp(CSE[i].name, name)==0)
+
 
 
 
